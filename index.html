@@ -12,10 +12,15 @@
         <form id="form">
             <input placeholder="Name" id="input-name" name="name" type="text"/>
             <input placeholder="Username" id="input-username" name="username" type="text"/>
+            <div class="gender-input-container">
+                <label>Male<input  id="input-male" name="male" type="radio"></label>
+                <label>Female<input id="input-female" name="female" type="radio"></label>
+            </div>
+            <div id="message-error"></div>
             <button id="login-button">Login</button>
         </form>
     </section>
-    <section id="lienzo">
+    <section id="lienzo-section">
         <canvas id="canvas"></canvas>
     </section>
     <script src="./src/index.js" defer></script>
